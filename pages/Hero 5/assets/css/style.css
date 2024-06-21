@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Tahoma', sans-serif;
+    background-color: #5a5a5a;
+    color: #000000;
+}
+
+.button-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.nav-button {
+    background-color: #444;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.hero-5 {
+    background-image: url('/assets/img/Viper.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 350px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgba(0, 0, 0, 0.9);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    animation: fadeInSlide 1.5s ease-in-out;
+}
+
+@keyframes fadeInSlide {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% { transform: translateY(100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.hero-text {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.hero-button {
+    background-color: #8a2be2;
+    border: none;
+    padding: 12px 28px;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.hero-button:hover {
+    background-color: #9b30ff;
+    transform: scale(1.1);
+}
+
+.hero-details {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.hero-subtitle {
+    font-size: 2em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #8a2be2;
+    padding-bottom: 10px;
+}
+
+.hero-abilities,
+.hero-abilities li {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.hero-background {
+    margin-top: 20px;
+}
+
