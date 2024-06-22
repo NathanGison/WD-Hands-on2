@@ -28,7 +28,7 @@ body {
 }
 
 .hero-4 {
-    background-image: url('/assets/img/Neon.jpeg');
+    background-image: url('../../../../assets/img/Neon.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

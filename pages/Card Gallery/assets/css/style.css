@@ -51,7 +51,7 @@
 }
 
 .omen-card .card-image {
-    background-image: url('/assets/img/Omen.jpeg');
+    background-image: url('../../../../assets/img/Omen.jpeg');
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -122,7 +122,7 @@
 }
 
 .phoenix-card .card-image {
-    background-image: url('/assets/img/Phoenix.jpeg');
+    background-image: url('../../../../assets/img/Pheonix.png');
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -272,7 +272,7 @@
 }
 
 .sova-card .card-image {
-    background-image: url('/assets/img/Sova.jpeg');
+    background-image: url('../../../../assets/img/Sova.jpeg');
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -345,7 +345,7 @@
 }
 
 .jett-card .card-image {
-    background-image: url('/assets/img/Jett.jpeg');
+    background-image: url('../../../../assets/img/Jett.jpeg');
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -469,7 +469,7 @@ body {
 }
 
 .omen-card .card-image {
-    background-image: url('/assets/img/Omen.jpeg');
+    background-image: url('../../../../assets/img/Omen.jpeg');
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -502,7 +502,7 @@ body {
 }
 
 .zoom-card .card-image {
-    background-image: url('/assets/img/Phoenix.jpeg');
+    background-image: url('../../../../assets/img/Pheonix.png');
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -536,7 +536,7 @@ body {
 }
 
 .slide-card .card-image {
-    background-image: url('/assets/img/Sage.jpeg');
+    background-image: url('../../../../assets/img/Sage.jpeg');
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -570,7 +570,7 @@ body {
 }
 
 .rotate-card .card-image {
-    background-image: url('/assets/img/Sova.jpeg');
+    background-image: url('../../../../assets/img/Sova.jpeg');
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -599,7 +599,7 @@ body {
 }
 
 .fade-card .card-image {
-    background-image: url('/assets/img/Jett.jpeg');
+    background-image: url('../../../../assets/img/Jett.jpeg');
     background-size: cover;
     background-position: center;
     height: 200px;
