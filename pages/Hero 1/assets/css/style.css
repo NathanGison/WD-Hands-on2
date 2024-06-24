@@ -33,17 +33,18 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    padding: 300px 20px;
+    padding: 100px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
 }
 
 .hero-title {
-    font-size: 4em;
+    font-size: 3em;
     margin-bottom: 20px;
     letter-spacing: 2px;
 }
@@ -71,11 +72,12 @@ body {
 
 .hero-details {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: left;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .hero-subtitle {
@@ -96,27 +98,51 @@ body {
     margin-top: 20px;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5em;
+    }
 
-.hero-details {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
+    .hero-text {
+        font-size: 1.2em;
+    }
+
+    .hero-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .hero-details {
+        padding: 15px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5em;
+    }
 }
 
-.hero-subtitle {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2em;
+    }
 
-.hero-abilities,
-.hero-abilities li {
-    list-style: none;
-    padding: 0;
-    margin: 5px 0;
-}
+    .hero-text {
+        font-size: 1em;
+    }
 
-.hero-background {
-    margin-top: 20px;
+    .hero-button {
+        padding: 8px 16px;
+        font-size: 0.8em;
+    }
+
+    .hero-details {
+        padding: 10px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2em;
+    }
 }
 
 

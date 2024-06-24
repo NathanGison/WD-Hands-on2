@@ -1,30 +1,30 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
 
-
-.button-container {
-    text-align: center;
-    padding: 20px;
+.navbar {
     background-color: #333;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
 }
 
 .nav-button {
     background-color: #444;
+    color: white;
     border: none;
     padding: 10px 20px;
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
     margin: 5px;
-    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 .nav-button:hover {
     background-color: #555;
-    transform: scale(1.05);
-}body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
 }
 
 .card-container {
@@ -36,13 +36,235 @@
 }
 
 .card {
+    background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 400px;
-    margin: 20px;
+    transition: transform 0.3s;
+    width: 300px;
 }
 
-/* Omen Card (Profile Card Design) */
+.card:hover {
+    transform: scale(1.05);
+}
+
+.profilecard2 .profile-image img,
+.profile-card .profile-image img,
+.profile-card1 .profile-img,
+.product-card .product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.profilecard2 .profile-details,
+.profile-card .profile-info,
+.profile-card1 .description,
+.product-card .product-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card {
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-details .product-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.product-details .product-description {
+    font-size: 0.9em;
+    color: #777;
+    margin: 10px 0;
+}
+
+.product-rating span {
+    color: #ffa500;
+    font-size: 1em;
+}
+
+.product-pricing {
+    margin: 10px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: #27ae60;
+    font-size: 1.2em;
+}
+
+.offer-expiry {
+    font-size: 0.8em;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-to-cart:hover {
+    background-color: #c0392b;
+}
+
+/* Existing styles for other cards */
+.profile-card,
+.profilecard2,
+.profile-card1 {
+    background-color: #2e3a46;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
+.social-links {
+    background-color: #e91e63;
+    padding: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #ffffff;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+.followers {
+    background-color: #333;
+    padding: 10px;
+}
+
+.profile-card1 .pro-badge {
+    background-color: #FFD700;
+    color: #000;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.profile-card1 .profile-img {
+    border-radius: 50%;
+    border: 2px solid #00ADB5;
+    width: 100px;
+    height: 100px;
+}
+
+.profile-card1 .name {
+    font-size: 22px;
+    margin: 10px 0 5px;
+}
+
+.profile-card1 .location {
+    font-size: 14px;
+    color: #a1a1a1;
+    margin: 5px 0;
+}
+
+.profile-card1 .description {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.profile-card1 .buttons {
+    margin: 20px 0;
+}
+
+.profile-card1 .message-btn,
+.profile-card1 .following-btn {
+    background-color: #00ADB5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.profile-card1 .following-btn {
+    background-color: transparent;
+    border: 1px solid #00ADB5;
+}
+
+.profile-card1 .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.profile-card1 .skill {
+    background-color: #393e46;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.profilecard2 {
+    display: flex;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.profilecard2 .profile-details {
+    margin-left: 20px;
+    background: #2b2b3a;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.profilecard2 .profile-details h1 {
+    margin-top: 0;
+    color: #ff5f6d;
+}
+
+.profilecard2 .profile-details p {
+    margin: 5px 0;
+}
+
 .omen-card {
     background-color: #1a1a1a;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -112,533 +334,14 @@
     margin-top: 10px;
 }
 
-/* Phoenix Card (Product Card Design) */
-.phoenix-card {
-    background-color: #ffe0b2;
-    border: 3px solid #ff5722;
-    transform: rotate(-2deg);
-    text-align: left;
-    color: #333;
-}
 
-.phoenix-card .card-image {
-    background-image: url('../../../../assets/img/Pheonix.png');
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-}
 
-.phoenix-card .card-content {
-    padding: 15px;
-}
 
-.phoenix-card .card-title {
-    font-size: 2em;
-    color: #d84315;
-    margin-bottom: 10px;
-}
 
-.phoenix-card .card-text {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
 
-.phoenix-card .card-price {
-    font-size: 1.5em;
-    color: #ff5722;
-    margin-bottom: 20px;
-}
 
-.phoenix-card .card-button {
-    background-color: #d84315;
-    border: none;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
 
-.phoenix-card .card-button:hover {
-    background-color: #ff7043;
-    transform: scale(1.1);
-}
 
-.phoenix-card .card-details {
-    padding: 20px;
-    background-color: #ffccbc;
-    text-align: left;
-}
-
-.phoenix-card .card-subtitle {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #d84315;
-    padding-bottom: 5px;
-}
-
-.phoenix-card .card-features,
-.phoenix-card .card-features li {
-    list-style: none;
-    padding: 0;
-    margin: 5px 0;
-}
-
-.phoenix-card .card-background {
-    margin-top: 10px;
-}
-
-/* Sage Card (Dashboard Card Design) */
-.sage-card {
-    background-color: #e0f7fa;
-    border-radius: 20px;
-    text-align: center;
-    color: #006064;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.sage-card .card-header {
-    width: 100%;
-    padding: 15px;
-    background-color: #006064;
-    color: #fff;
-    border-radius: 20px 20px 0 0;
-}
-
-.sage-card .card-header .card-title {
-    font-size: 1.8em;
-    margin: 0;
-}
-
-.sage-card .card-stats {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
-}
-
-.sage-card .stat {
-    text-align: center;
-}
-
-.sage-card .stat-number {
-    font-size: 2em;
-}
-
-.sage-card .stat-label {
-    font-size: 1em;
-    color: #b2ebf2;
-}
-
-.sage-card .chart-placeholder {
-    background-color: #b2ebf2;
-    width: 90%;
-    height: 150px;
-    margin: 20px 0;
-    border-radius: 10px;
-}
-
-.sage-card .card-content {
-    padding: 15px;
-    width: 100%;
-}
-
-.sage-card .card-button {
-    background-color: #006064;
-    border: none;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.sage-card .card-button:hover {
-    background-color: #00838f;
-    transform: scale(1.1);
-}
-
-/* Sova Card (Blog Card Design) */
-.sova-card {
-    background-color: #e8eaf6;
-    border: 3px solid #3f51b5;
-    text-align: center;
-    border-radius: 5px;
-    color: #3f51b5;
-    box-shadow: inset 0 0 10px #3f51b5;
-}
-
-.sova-card .card-image {
-    background-image: url('../../../../assets/img/Sova.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    border-bottom: 3px solid #3f51b5;
-}
-
-.sova-card .card-content {
-    padding: 20px;
-}
-
-.sova-card .card-title {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #3f51b5;
-}
-
-.sova-card .card-text {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.sova-card .card-button {
-    background-color: #3f51b5;
-    border: none;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.sova-card .card-button:hover {
-    background-color: #5c6bc0;
-    transform: scale(1.1);
-}
-
-.sova-card .card-details {
-    padding: 20px;
-    background-color: #c5cae9;
-    text-align: left;
-}
-
-.sova-card .card-subtitle {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #3f51b5;
-    padding-bottom: 5px;
-}
-
-.sova-card .card-posts,
-.sova-card .card-posts li {
-    list-style: none;
-    padding: 0;
-    margin: 5px 0;
-}
-
-.sova-card .card-background {
-    margin-top: 10px;
-}
-
-/* Jett Card (Profile Card Design) */
-.jett-card {
-    background-color: #e0f7fa;
-    border: 3px solid #00796b;
-    border-radius: 50px;
-    text-align: center;
-    padding: 30px;
-    color: #00796b;
-    transform: rotate(5deg);
-}
-
-.jett-card .card-image {
-    background-image: url('../../../../assets/img/Jett.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    border-radius: 50px;
-    border: 3px solid #00796b;
-}
-
-.jett-card .card-content {
-    padding: 15px;
-}
-
-.jett-card .card-title {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #00796b;
-}
-
-.jett-card .card-text {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.jett-card .card-button {
-    background-color: #00796b;
-    border: none;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.jett-card .card-button:hover {
-    background-color: #009688;
-    transform: scale(1.1);
-}
-
-.jett-card .card-details {
-    padding: 20px;
-    background-color: #b2dfdb;
-    text-align: left;
-}
-
-.jett-card .card-subtitle {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #00796b;
-    padding-bottom: 5px;
-}
-
-.jett-card .card-abilities,
-.jett-card .card-abilities li {
-    list-style: none;
-    padding: 0;
-    margin: 5px 0;
-}
-
-.jett-card .card-background {
-    margin-top: 10px;
-}
-
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a;
-    color: #ffffff;
-}
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.card {
-    border-radius: 10px;
-    overflow: hidden;
-    max-width: 400px;
-    margin: 20px;
-    position: relative;
-    transition: transform 0.3s;
-}
-
-/* Flip Card */
-.flip-card {
-    perspective: 1000px;
-}
-
-.flip-card .card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.flip-card:hover .card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card .card-front,
-.flip-card .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.flip-card .card-front {
-    background-color: #292b2f;
-    color: #ffffff;
-}
-
-.flip-card .card-back {
-    background-color: #1a1a1a;
-    color: white;
-    transform: rotateY(180deg);
-}
-
-.omen-card .card-image {
-    background-image: url('../../../../assets/img/Omen.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-}
-
-.omen-card .card-subtitle {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #ff4655;
-}
-
-.omen-card .card-abilities {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-}
-
-.omen-card .card-abilities li {
-    margin: 5px 0;
-}
-
-/* Zoom Card */
-.zoom-card {
-    overflow: hidden;
-}
-
-.zoom-card:hover {
-    transform: scale(1.1);
-}
-
-.zoom-card .card-image {
-    background-image: url('../../../../assets/img/Pheonix.png');
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    transition: transform 0.3s;
-}
-
-.zoom-card:hover .card-image {
-    transform: scale(1.2);
-}
-
-.phoenix-card .card-content {
-    background-color: #ff5733;
-    padding: 20px;
-}
-
-.phoenix-card .card-title {
-    color: #ffffff;
-}
-
-.phoenix-card .card-text {
-    color: #ffffff;
-}
-
-/* Slide Card */
-.slide-card {
-    overflow: hidden;
-}
-
-.slide-card:hover {
-    transform: translateX(10px);
-}
-
-.slide-card .card-image {
-    background-image: url('../../../../assets/img/Sage.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    transition: transform 0.3s;
-}
-
-.slide-card:hover .card-image {
-    transform: translateX(-10px);
-}
-
-.sage-card .card-content {
-    background-color: #00acc1;
-    padding: 20px;
-}
-
-.sage-card .card-title {
-    color: #ffffff;
-}
-
-.sage-card .card-text {
-    color: #ffffff;
-}
-
-/* Rotate Card */
-.rotate-card {
-    overflow: hidden;
-}
-
-.rotate-card:hover {
-    transform: rotate(10deg);
-}
-
-.rotate-card .card-image {
-    background-image: url('../../../../assets/img/Sova.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-}
-
-.sova-card .card-content {
-    background-color: #3f51b5;
-    padding: 20px;
-}
-
-.sova-card .card-title {
-    color: #ffffff;
-}
-
-.sova-card .card-text {
-    color: #ffffff;
-}
-
-/* Fade Card */
-.fade-card {
-    overflow: hidden;
-}
-
-.fade-card:hover {
-    transform: translateY(-10px);
-}
-
-.fade-card .card-image {
-    background-image: url('../../../../assets/img/Jett.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    opacity: 1;
-    transition: opacity 0.3s;
-}
-
-.fade-card:hover .card-image {
-    opacity: 0.5;
-}
-
-.jett-card .card-content {
-    background-color: #00796b;
-    padding: 20px;
-}
-
-.jett-card .card-title {
-    color: #ffffff;
-}
-
-.jett-card .card-text {
-    color: #ffffff;
-}
-
-/* Shared Styles */
-.card-content {
-    padding: 20px;
-    text-align: center;
-}
-
-.card-title {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.card-text {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
 
 
 
